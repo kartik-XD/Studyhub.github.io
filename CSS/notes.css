@@ -1,0 +1,160 @@
+
+html{
+	font-size: 10px;
+}
+
+
+body{
+	
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.container{
+	
+	display: grid;
+	grid-template-areas: 
+		'nav nav nav nav '
+		'sem-1 sem-2 sem-3 sem-4'
+		'sem-5 sem-6 sem-7 sem-8'
+		'footer footer footer footer';
+	grid-gap: 2.5rem;
+	
+}
+
+/*
+.container::before{
+	content: "";
+	position: absolute;
+	background-size: cover;
+	background-position: center;
+	
+	width: 99%;
+    height: 99%;
+    z-index: -1;
+    background: rgb(20,13,252);
+    background: linear-gradient(114deg, rgba(20,13,252,1) 4%, rgba(79,67,177,1) 27%, rgba(58,179,159,1) 46%, rgba(0,5,255,1) 100%);  
+	
+	opacity: 0.7;
+    border-radius: 10px;
+	
+}
+*/
+
+.nav{
+	
+/*	border: 2px solid red;*/
+	grid-area: nav;
+	display: flex;
+	background-color: black;
+	border-radius: 10px;
+	flex-wrap: wrap;
+	width: 100%;
+}
+.nav img{
+	height: 60px;
+	
+}
+.nav ul{
+	display: flex;
+	flex-direction: row;
+	text-decoration: none;
+	list-style: none;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.nav ul a{
+	font-size: 1.8rem;
+	text-decoration: none;
+	margin: 1rem 0.5rem 0rem 0.5rem;
+	padding: 0.4rem;
+	color: aliceblue;
+}
+
+.nav ul a:hover{
+	border: 2px solid white;
+	background-color: azure;
+	padding: 0.5rem;
+	color: black;
+	border-radius: 5px;
+	
+}
+
+.nav form{
+	margin:auto;
+	font-family: inherit;
+	border-radius: 4px;
+
+	
+}
+
+.nav form input{
+	width: 250px;
+	height: 20px;
+}
+
+
+.notes{
+	
+
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 180px;
+	width: 180px;
+	margin-bottom: 65px;
+    text-align: center;
+    box-shadow:  0px 0px 1.5px 3px #0b0b0bc7;
+    transition: 0.5s ease;
+	cursor: pointer;
+	
+}
+
+.notes:hover{
+	transform: scale(1.2);
+/*	 box-shadow:  0px 0px 1px 4px #0b0b0bc7; */
+}
+
+.notes h2{
+	margin-bottom: 30px;
+	font-size: 2.5rem;
+	text-align: center;
+	text-decoration: overline;
+	
+}
+
+
+.notes h2 a{
+	text-decoration: none;
+	
+}
+
+.notes h2 a:hover{
+	color: aliceblue;
+	background-color: black;
+	border-radius: 2px;
+
+}
+
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 100%;
+}
+
+footer{
+	grid-area: footer;
+	display: flex;
+/*	background-color: black;*/
+	border-radius: 10px;
+	flex-wrap: wrap;
+	margin-bottom: 0px;
+	 position: fixed;
+    bottom: 0;
+    width: 99%;
+	justify-content: center;
+}

@@ -1,0 +1,283 @@
+html{
+	font-size: 10px;
+}
+
+
+body{
+	
+	font-family: 'Ubuntu', sans-serif;
+}
+
+
+body .logo img{
+	height: 50px;
+}
+
+
+#navbar{
+	
+/*    background-color: #000000cc;*/
+	align-content: center;
+	border-radius: 10px;
+/*	border: 2px solid black;*/
+/*
+	position: relative;
+	opacity: 0.7;
+*/
+/*	box-shadow: -4px 4px 4px 2px grey;*/
+	
+}
+
+#navbar::before{
+	content: "";
+	background-color:black;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	position: relative;
+	opacity: 1;
+	
+}
+
+
+
+.logo_items{
+	display: flex;
+	
+}
+.logo img{
+	height: 50em;
+}
+
+.nav_items ul{
+	display: flex;
+	align-content: center;
+	flex-wrap: wrap;
+	
+}
+.nav_items ul li{
+	list-style: none;
+}
+.nav_items ul li a{
+	font-size: 1.8rem;
+	text-decoration: none;
+	margin: 1rem 0.5rem 0rem 0.5rem;
+	padding: 0.4rem;
+	color: aliceblue;
+}
+
+.nav_items ul li a:hover{
+	border: 2px solid white;
+	background-color: azure;
+	padding: 0.5rem;
+	color: black;
+	border-radius: 5px;
+	
+	
+}
+
+
+.logo_items form{
+	border: 1px solid white;
+	margin: auto;	
+	border-radius: 4px;
+}
+
+
+.logo_items form input{
+    border: 1px solid gray;
+	width: 240px;
+	border-radius: 4px;
+	height: 25px;
+}
+
+/*home styling*/
+
+.home{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: azure;
+	flex-wrap: wrap;
+	height: 385px;
+	
+}
+
+.home::before{
+	content: "";
+    position: absolute;
+    width: 99%;
+    height: 73.5%;
+    background-image: url(https://source.unsplash.com/1600x900/?space,dark.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+    opacity: 0.8;
+    z-index: -1;
+    margin-top:auto;
+    border-radius: 14px;
+}
+.home h1{
+	font-size: 6rem;
+}
+
+.home p{
+	font-size: 2rem;
+}
+
+
+/*services styling*/
+
+.container{
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.services{
+	margin-top: 3px;
+/*	border: 2px solid red; */
+	height: 439px;
+	width: 229px;
+    text-align: center;
+	box-shadow:  5px 7px 8px 1px #0b0b0bc7;
+	border-radius: 2px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.services:hover{
+	transform: scale(1.1);
+	box-shadow:  2px 4px 6px 3px #0b0b0bc7;
+}
+
+.services h2{
+	font-size: 3rem;
+	text-decoration: underline;
+}
+
+.services p{
+	font-size: 1.7rem;
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+	
+}
+
+.services a
+{
+	font-size: 1.9rem;
+	text-decoration: none;
+	color: white;
+	border: 2px solid black;
+	padding: 3px 3px;
+	border-radius:3px; 
+	background-color: black;
+}
+
+.services a:hover{
+	background-color: aliceblue;
+	color: black;
+	display: inline-block;
+}
+
+
+/*contact us*/
+
+
+.contact_us{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	margin-top:20px;
+	flex-wrap: wrap;
+	height: 534px;
+}
+
+.contact_us::before{
+	content: "";
+    position: absolute;
+    width: 99%;
+    height: 68%;
+    background-image: url(https://source.unsplash.com/1600x900/?water,building.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	overflow: hidden;
+    opacity: 0.8;
+	margin-top: 20px;
+    z-index: -1;
+    border-radius: 14px;
+	
+	
+}
+
+
+.contact_us h1{
+	font-size: 3.5rem;
+	margin-top: 35px;
+}
+
+.contact_form{
+	display: flex;
+	flex-direction: column;
+	margin: 3px 3px;
+	border: none;
+}
+
+.contact_form input{
+	margin: 5px 3px;
+	border-radius: 3px;
+	height: 25px;
+	width: 240px;
+	font-family: inherit;
+}
+
+.contact_form input::placeholder{
+	color: black;
+	font-family: inherit;
+}
+
+.contact_form textarea::placeholder{
+	font-size: 1.5rem;
+    font-family: inherit;
+	color: black;
+}
+
+.contact_form textarea{
+	margin: 5px 3px;
+	border-radius: 10px;
+	width: 69.1rem;
+    height: 20.3rem;
+}
+
+.contact_form button{
+	font-family:inherit;
+	font-size: 1.9rem;
+    margin: 5px;
+    padding: 3px;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+}
+.contact_form button:hover{
+	font-family:inherit;
+	border: 2px solid white;
+	background-color: whitesmoke;
+	color: black;
+	border-radius: 3px;
+	box-shadow: 0px 2px 3px 2px #000000c7;
+	cursor: pointer;
+	
+}
