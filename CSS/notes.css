@@ -16,10 +16,11 @@ body{
 	display: grid;
 	grid-template-areas: 
 		'nav nav nav nav '
-		'sem-1 sem-2 sem-3 sem-4'
-		'sem-5 sem-6 sem-7 sem-8'
+		'notes notes notes notes'
 		'footer footer footer footer';
 	grid-gap: 2.5rem;
+	
+/*	grid-template-columns: repeat(auto-fit,minmax(320px,1fr));*/
 	
 }
 
@@ -158,3 +159,96 @@ footer{
     width: 99%;
 	justify-content: center;
 }
+
+ @media only screen and (min-width:425px) and (max-width:650px){
+/*
+	body{
+		background-color: red;
+	}
+*/
+	 	 .container{
+		 grid-template-areas: 
+		'nav nav'
+		'notes notes'
+		'footer footer';
+	 } 
+
+    .nav form{ margin-bottom: 5px;
+	
+       }
+	 .notes{
+		 height: 160px;
+		 width: 160px;
+	 }
+	 .note:hover{
+		 transform: scale(1.1);
+	 }
+     
+    footer{
+		opacity: 0.8;
+}
+
+}	
+
+ @media only screen and (min-width:650px) and (max-width:940px){
+/*
+	body{
+		background-color: red;
+	}
+*/
+	 	 .container{
+		 grid-template-areas: 
+		'nav nav nav'
+		'notes notes note'
+		'footer footer footer';
+	 } 
+
+    .nav form{ margin-bottom: 5px;
+	
+       }
+	 .notes{
+		 height: 160px;
+		 width: 160px;
+	 }
+	 .note:hover{
+		 transform: scale(1.1);
+	 }
+     
+    footer{
+		opacity: 0.8;
+}
+
+}	
+
+ @media only screen and (min-width:280px) and (max-width:440px){
+
+/*
+	body{
+		background-color: red;
+	}
+*/
+
+	 	 .container{
+		 grid-template-areas: 
+		'nav '
+		'notes'
+		'footer';
+	 } 
+
+    .nav form{ margin-bottom: 5px;
+	
+       }
+	 .notes{
+		 height: 160px;
+		 width: 160px;
+	 }
+	 .note:hover{
+		 transform: scale(1.1);
+	 }
+     
+    footer{
+		opacity: 0.8;
+}
+
+}	
+
